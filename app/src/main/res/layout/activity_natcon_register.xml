@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sign_up"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+
+    tools:context="com.example.hp.credainatcon17.NatconRegister">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <Button
+            android:id="@+id/btnNatcon_skipregistration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Skip Registration" />
+
+        <TextView
+            android:id="@+id/txtNatcon_credaimember"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Credai Member"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/rgNatcon_credaimember"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbtnNatcon_credaimember_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Yes" />
+
+            <RadioButton
+                android:id="@+id/rbtnNatcon_credaimember_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="No" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/txtNatcon_chaptername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Chapter Name"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spinnerNatcon_chaptername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:spinnerMode="dropdown"
+            android:entries="@array/categoriesChapter"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/Natcon_textInputLayout_company_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/edtNatcon_companyname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Company Name"
+                android:inputType="text"
+                android:textColorHint="#000" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/Natcon_textInputLayout_companyaddress1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true">
+
+            <EditText
+                android:id="@+id/edtNatcon_companyaddress1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Company Address 1"
+                android:inputType="textPersonName"
+                android:textColorHint="#000" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/Natcon_textInputLayout_companyaddress2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edtNatcon_companyaddress2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Company Address 2"
+                android:inputType="text"
+                android:textColorHint="#000" />
+        </android.support.design.widget.TextInputLayout>
+        <TextView
+            android:id="@+id/txtNatcon_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="State"
+            android:textSize="18sp" />
+        <Spinner
+            android:id="@+id/spinnerNatcon_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:spinnerMode="dropdown"
+            android:entries="@array/categoriesState"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/Natcon_textInputLayout_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edtNatcon_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="City"
+                android:inputType="text"
+                android:textColorHint="#000" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/Natcon_textInputLayout_pincode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edtNatcon_pincode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Pincode"
+                android:inputType="number"
+                android:textColorHint="#000" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/Natcon_textInputLayout_delegatename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etdNatcon_delegatename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Delegate Name"
+                android:inputType="text"
+                android:textColorHint="#000" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/Natcon_textInputLayout_delegatenickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etdNatcon_delegatenickname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Delegate Nick Name"
+                android:inputType="text"
+                android:textColorHint="#000" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/Natcon_textInputLayout_dob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etdNatcon_dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_event_black_24dp"
+                android:focusable="false"
+                android:hint="@string/dob_dd_mm_yyyy"
+                android:textColorHint="#000" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/Natcon_textInputLayout_emailid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etdNatcon_emailid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="E-mail Id"
+                android:textColorHint="#000" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/Natcon_textInputLayout_phonenumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edtdNatcon_phonenumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone Number"
+                android:inputType="number"
+                android:textColorHint="#000" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/Natcon_textInputLayout_whatsappnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etdNatcon_whatsappnumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="WhatsApp Number"
+                android:inputType="number"
+                android:textColorHint="#000" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <Button
+                android:id="@+id/btnNatcon_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:text="Next"
+                android:layout_centerHorizontal="true"
+                android:textColor="#FFF" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
+

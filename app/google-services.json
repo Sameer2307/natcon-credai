@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "12953074207",
+    "firebase_url": "https://credainatcon17-f96ad.firebaseio.com",
+    "project_id": "credainatcon17-f96ad",
+    "storage_bucket": "credainatcon17-f96ad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:12953074207:android:5bca2ff58356778a",
+        "android_client_info": {
+          "package_name": "com.example.hp.credainatcon17"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "12953074207-sbie2fm9jjlkavr49n2k4eskdie3omrl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJASZA9zTruu-OwQuR1nDWckLL5GB5PSE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
